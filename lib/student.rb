@@ -92,8 +92,6 @@ class Student
 
     row=DB[:conn].execute(sql)[0]
       Student.new_from_db(row)
-    end
-
 
   end
 end
