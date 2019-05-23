@@ -86,10 +86,11 @@ class Student
 
   def self.first_student_in_grade_10
     sql=<<-SQL
+      binding.pry
       SELECT * FROM students
       WHERE id=1 AND grade=10
     SQL
-    binding.pry
+  
     row=DB[:conn].execute(sql)[0]
       Student.new_from_db(row)
 
