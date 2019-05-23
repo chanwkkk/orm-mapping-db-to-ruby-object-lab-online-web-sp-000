@@ -90,7 +90,7 @@ class Student
       WHERE id=1 AND grade=10
     SQL
 
-    DB[:conn].execute(sql).map do |row|
+    row=DB[:conn].execute(sql)[0]
       Student.new_from_db(row)
     end
 
