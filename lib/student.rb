@@ -102,7 +102,7 @@ class Student
       SELECT * FROM students
       WHERE grade = x
     SQL
-
+    binding.pry
     DB[:conn].execute(sql).map do |row|
       Student.new_from_db(row)
     end
