@@ -108,5 +108,5 @@ class Student
     end
   end
 
-  def 
+  def
 end
