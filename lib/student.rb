@@ -119,6 +119,6 @@ class Student
     DB[:conn].execute(sql,x).map do |row|
       Student.new_from_db(row)
     end
-    
+
   end
 end
