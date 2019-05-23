@@ -29,7 +29,7 @@ class Student
       SELECT * FROM students
       WHERE name=name
     SQL
-
+    binding.pry
     #DB[:conn].execute(sql).
 
   end
