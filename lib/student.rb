@@ -88,6 +88,7 @@ class Student
     sql=<<-SQL
       SELECT * FROM students
       WHERE grade=10
+      LIMIT 1
     SQL
     binding.pry
     row=DB[:conn].execute(sql)[0]
